@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2> Biodata</h2>
+            <p>Your biodata has been successfully submitted.</p>
+        </div>
+        <div id="biodataDisplay">
+            <!-- Personal Details -->
+            <div class="section">
+                <h3>Personal Details</h3>
+                <div class="field-group" id="personalDetails"></div>
+            </div>
+
+            <!-- Education & Occupation -->
+            <div class="section">
+                <h3>Education & Occupation</h3>
+                <div class="field-group" id="educationOccupation"></div>
+            </div>
+
+            <!-- Parents Details -->
+            <div class="section">
+                <h3>Parents Details</h3>
+                <div class="field-group" id="parentsDetails"></div>
+            </div>
+
+            <!-- Siblings Details -->
+            <div class="section">
+                <h3>Siblings Details</h3>
+                <div class="field-group" id="siblingsDetails"></div>
+            </div>
+        </div>
+        <a href="index.html">Go Back</a>
+    </div>
+    <script>
+        // Function to parse query parameters from the URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            const data = {};
+            for (const [key, value] of params.entries()) {
+                data[key] = value;
+            }
+            return data;
+        }
+
+        // Function to display submitted data in a structured format
+        function displaySubmittedData() {
+            const biodata = getQueryParams();
+
+            // Personal Details
+            const personalDetails = document.getElementById("personalDetails");
+            personalDetails.innerHTML = `
+                <div class="field"><strong>Full Name:</strong> ${biodata.name || "N/A"}</div>
+                <div class="field"><strong>Email:</strong> ${biodata.email || "N/A"}</div>
+                <div class="field"><strong>Phone:</strong> ${biodata.phone || "N/A"}</div>
+                <div class="field"><strong>Address:</strong> ${biodata.address || "N/A"}</div>
+                <div class="field"><strong>Date of Birth:</strong> ${biodata.dob || "N/A"}</div>
+                <div class="field"><strong>Gender:</strong> ${biodata.gender || "N/A"}</div>
+                <div class="field"><strong>Weight (kg):</strong> ${biodata.weight || "N/A"}</div>
+            `;
+
+            // Education & Occupation
+            const educationOccupation = document.getElementById("educationOccupation");
+            educationOccupation.innerHTML = `
+                <div class="field"><strong>Education Background:</strong> ${biodata.education || "N/A"}</div>
+                <div class="field"><strong>Nationality:</strong> ${biodata.nationality || "N/A"}</div>
+                <div class="field"><strong>Blood Group:</strong> ${biodata.bloodGroup || "N/A"}</div>
+                <div class="field"><strong>Marital Status:</strong> ${biodata.marital || "N/A"}</div>
+                <div class="field"><strong>Occupation:</strong> ${biodata.occupation || "N/A"}</div>
+                ${biodata.otherOccupation ? `<div class="field"><strong>Other Occupation:</strong> ${biodata.otherOccupation}</div>` : ""}
+                <div class="field"><strong>Hobbies:</strong> ${biodata.hobbies || "N/A"}</div>
+            `;
+
+            // Parents Details
+            const parentsDetails = document.getElementById("parentsDetails");
+            parentsDetails.innerHTML = `
+                <div class="field"><strong>Father's Name:</strong> ${biodata.fatherName || "N/A"}</div>
+                <div class="field"><strong>Father's Occupation:</strong> ${biodata.fatherOccupation || "N/A"}</div>
+                <div class="field"><strong>Mother's Name:</strong> ${biodata.motherName || "N/A"}</div>
+                <div class="field"><strong>Mother's Occupation:</strong> ${biodata.motherOccupation || "N/A"}</div>
+            `;
+
+            // Siblings Details
+            const siblingsDetails = document.getElementById("siblingsDetails");
+            let siblingsHTML = "";
+            for (let i = 1; biodata[`siblingName${i}`]; i++) {
+                siblingsHTML += `
+                    <div class="sibling">
+                        <div class="field"><strong>Sibling ${i} Name:</strong> ${biodata[`siblingName${i}`]}</div>
+                        <div class="field"><strong>Sibling ${i} Occupation:</strong> ${biodata[`siblingOccupation${i}`] || "N/A"}</div>
+                        <div class="field"><strong>Sibling ${i} Marital Status:</strong> ${biodata[`siblingMaritalStatus${i}`] || "N/A"}</div>
+                        <div class="field"><strong>Sibling ${i} Is Student:</strong> ${biodata[`siblingIsStudent${i}`] || "N/A"}</div>
+                        ${biodata[`siblingClass${i}`] ? `<div class="field"><strong>Sibling ${i} Class/Grade:</strong> ${biodata[`siblingClass${i}`]}</div>` : ""}
+                    </div>
+                `;
+            }
+            siblingsDetails.innerHTML = siblingsHTML || "<div class='field'>No siblings added.</div>";
+        }
+
+        // Display data when the page loads
+        displaySubmittedData();
+    </script>
+</body>
+</html>

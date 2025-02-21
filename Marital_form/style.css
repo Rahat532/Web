@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg,#ddd6f3 , #faaca8);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: linear-gradient(135deg,#d4d1de , #eac8c6);
+    margin: 0;;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Styles */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.inline-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.inline-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5b91b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Submitted Page Styles */
+#biodataDisplay {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.field-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.field {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.field strong {
+    color: #2c3e50;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+}
