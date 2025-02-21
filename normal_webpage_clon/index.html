@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দ্য ইকোনমিস্ট ক্লোন</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- হেডার -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+            <img src="image\WhatsApp Image 2025-02-16 at 22.45.42_41302f6a.jpg" alt="লোগো" class="h-8 md:h-10">
+            
+            <nav class="hidden md:flex space-x-6 order-3 md:order-2 w-full md:w-auto mt-4 md:mt-0">
+                <a href="#" class="text-red-600 font-bold hover:text-red-800">মেনু</a>
+                <a href="#" class="text-red-600 font-bold hover:text-red-800">সাপ্তাহিক সংস্করণ</a>
+                <a href="#" class="text-red-600 font-bold hover:text-red-800">সংক্ষিপ্ত বিশ্ব</a>
+                <a href="#" class="text-red-600 font-bold hover:text-red-800">খুঁজুন ▼</a>
+            </nav>
+            
+            <div class="flex space-x-4 order-2">
+                <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">সাবস্ক্রাইব</button>
+                <button class="border border-red-600 text-red-600 px-4 py-2 rounded hover:bg-red-50">লগ ইন</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- মূল কন্টেন্ট -->
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
+        <!-- প্রধান খবর -->
+        <section class="bg-white md:flex gap-8 p-6 shadow-sm">
+            <img src="image\licensed-image.jpeg" alt="প্রধান ছবি" class="md:w-2/5 mb-4 md:mb-0 object-cover">
+            <div class="flex-1">
+                <p class="text-red-600 font-bold uppercase text-sm">বাণিজ্য</p>
+                <h1 class="text-2xl md:text-3xl font-bold my-4">ডিপসিক বাজারে সৃষ্টি করলো চাঞ্চল্য</h1>
+                <p class="text-gray-600 text-lg">সিলিকন ভ্যালির বিনিয়োগকারীদের প্রশ্নের মুখে চীনের সস্তা ভাষা মডেল</p>
+            </div>
+        </section>
+
+        <!-- পার্শ্ব সংবাদ -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 shadow-sm">
+                <p class="text-red-600 font-bold uppercase text-sm">ইউরোপ</p>
+                <h3 class="text-lg font-bold my-2">যুদ্ধবিরতি আলোচনায় উক্রেইনের সামরিক অবস্থানের অবনতি</h3>
+                <p class="text-gray-600">ভেলিকা নোভোসিলকা শহরে ভয়াবহ পরাজয়</p>
+            </div>
+            <div class="bg-white p-6 shadow-sm">
+                <p class="text-red-600 font-bold uppercase text-sm">যুক্তরাষ্ট্র</p>
+                <h3 class="text-lg font-bold my-2">লিঙ্গ পরিচয়ে হোয়াইট হাউসের দশ বছরের পরিবর্তনশীলতা</h3>
+                <p class="text-gray-600">ট্রাম্পের "জৈবিক সত্য পুনরুদ্ধার" আদেশ চূড়ান্ত কথা নয়</p>
+            </div>
+        </div>
+
+        <!-- সংবাদ গ্রিড -->
+        <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white p-6 shadow-sm">
+                <img src="image\af.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold mb-2">আফ্রিকার মানচিত্র বদলের রুয়ান্ডার বিপজ্জনক পরিকল্পনা</h4>
+                <p class="text-gray-600">গোমার পতনে নতুন কঙ্গো সংঘাতের সম্ভাবনা</p>
+            </article>
+            <article class="bg-white p-6 shadow-sm">
+                <img src="image\trafic.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold mb-2">এশিয়ার যানজট সমাধানের উপায়</h4>
+                <p class="text-gray-600">মধ্যবিত্তদের গাড়িপ্রীতি কিন্তু যানজটে ঘৃণা</p>
+            </article>
+            <article class="bg-white p-6 shadow-sm">
+                <img src="image\trafic.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold mb-2">সড়ক নিরাপত্তায় ব্রিটেনের পিছিয়ে পড়ার কারণ</h4>
+                <p class="text-gray-600">প্রতি বছর ১,৬০০ মানুষের মৃত্যু সড়ক দুর্ঘটনায়</p>
+            </article>
+            <article class="bg-white p-6 shadow-sm">
+                <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                <h4 class="font-bold mb-2">টোফু: রাজনৈতিক পরিচয়ে খাদ্য বিচার নয়</h4>
+                <p class="text-gray-600">সাদা প্লাস্টিক বাক্সের বাইরে ভাবুন। মাংসপ্রেমীদের টোফু গাইড</p>
+            </article>
+        </div>
+<br>
+        <!-- আরও আবিষ্কার -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-bold border-b-2 pb-2">আরও আবিষ্কার করুন</h2>
+            <div class="bg-gray-100 p-4 flex flex-wrap justify-between gap-4">
+                <span class="text-gray-700">অফিয়াম স্বেচ্ছাসেবক নিয়োগ বাড়ছে</span>
+                <span class="text-gray-700">আর্কাইভ ১৯৪৫</span>
+                <span class="text-gray-700">ডোনাল্ড ট্রাম্পের ১০০ দিন</span>
+                <span class="text-gray-700">পূর্বাঞ্চলীয় দেশগুলির অর্থনৈতিক উত্থানের পূর্বাভাস</span>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="বাণিজ্য" class="mb-4 w-full h-64 object-cover">
+                    <h2 class="text-xl font-bold mb-2">ট্রাম্পের শুল্ক হুমকি মোকাবেলায় মেক্সিকো ও কানাডার কৌশল</h2>
+                    <p class="text-gray-600">কর্মকর্তাদের কৌশল নিয়ে আলোচনা...</p>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\war.jpeg" alt="ইকুয়েডর" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">ইকুয়েডরের নির্বাচন: হ্যাক্টিভিজম ও গুঞ্জনের মধ্যেই নেতা নির্বাচন</h3>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\war.jpeg" alt="গাজা" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">গাজাকে আমেরিকান বানানোর ট্রাম্পের চমকপ্রদ পরিকল্পনা</h3>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                    <h2 class="text-xl font-bold mb-2">ট্রাম্পের সংরক্ষণবাদী উৎসাহ বেড়েই চলেছে</h2>
+                    <p class="text-gray-600">বাণিজ্য যুদ্ধ থেকে শিক্ষা...</p>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">শেষ হয়নি: ট্রাম্প এখনও বিশ্ব বাণিজ্য ধ্বংস করতে পারেন</h3>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">টুইটারের মতই আমেরিকার সরকারকে খণ্ডিখণ্ড করছেন এলন মাস্ক</h3>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">টুইটারের মতই আমেরিকার সরকারকে খণ্ডিখণ্ড করছেন এলন মাস্ক</h3>
+                </div>
+                <div class="bg-white p-6 shadow-sm">
+                    <img src="image\licensed-image.jpeg" alt="সংবাদ" class="mb-4 w-full h-48 object-cover">
+                    <h3 class="font-bold mb-2">টুইটারের মতই আমেরিকার সরকারকে খণ্ডিখণ্ড করছেন এলন মাস্ক</h3>
+                </div>
+            </div>
+        </section>
+<br>
+        <!-- সর্বশেষ ভিডিও -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-bold border-b-2 pb-2">সর্বশেষ ভিডিওসমূহ</h2>
+            <div class="flex overflow-x-auto pb-4 gap-4 scrollbar-hide">
+                <video class="w-64 h-36 flex-shrink-0 object-cover rounded-lg " controls autoPlay>
+                    <source src="image\5286261-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="w-64 h-36 flex-shrink-0 object-cover rounded-lg " controls autoPlay>
+                    <source src="image\5286261-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="w-64 h-36 flex-shrink-0 object-cover rounded-lg " controls autoPlay>
+                    <source src="image\5286261-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="w-64 h-36 flex-shrink-0 object-cover rounded-lg " controls autoPlay>
+                    <source src="image\5286261-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <video class="w-64 h-36 flex-shrink-0 object-cover rounded-lg " controls autoPlay>
+                    <source src="image\5286261-hd_1920_1080_30fps.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+
+            </div>
+        </section>
+<br>
+        <!-- গ্রাহক বিভাগ -->
+        <section class="space-y-8">
+            <h2 class="text-2xl font-bold border-b-2 pb-2">সবচেয়ে বেশি পড়া গল্পসমূহ</h2>
+            <ol class="list-decimal pl-6 space-y-4">
+                <li class="font-bold">স্ক্যাম ইনকর্পোরেটেডের বৈশ্বিক জটিল নেটওয়ার্ক</li>
+                <li class="font-bold">গাজা পরিকল্পনায় আমেরিকার রপ্তানিযোগ্য উপাদান</li>
+                <li class="font-bold">ট্রাম্পের শ্রমিক নীতির প্রকৃত অর্থ</li>
+                <li class="font-bold">বিশ্ব বাণিজ্য ধ্বংসের ট্রাম্পের অব্যাহত হুমকি</li>
+                <li class="font-bold">মাঝেমধ্যে উপবাস কি কার্যকর?</li>
+            </ol>
+
+            <div class="bg-gray-50 p-6 md:flex gap-8">
+                <img src="image\elone.jpeg" alt="স্ক্যাম ইনকর্পোরেটেড" class="md:w-1/3 mb-4 md:mb-0 object-cover">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold mb-4">স্ক্যাম ইনকর্পোরেটেড</h3>
+                    <p class="text-gray-600 mb-4">অক্সফোর্ড ও কেমব্রিজের শতাব্দীপ্রাচীন আর্থিক প্রতারণা</p>
+                    <ul class="list-disc pl-6 space-y-2 mb-4">
+                        <li>বিশ্ব বাণিজ্য ধ্বংসের ট্রাম্পের সম্ভাবনা</li>
+                        <li>শ্রমিক দলের অর্থনৈতিক নীতি</li>
+                        <li>গাজায় মাগা নীতির প্রয়োগ</li>
+                    </ul>
+                    <a href="#" class="text-red-600 font-bold hover:underline">সম্পূর্ণ সংস্করণ পড়ুন</a>
+                </div>
+            </div>
+        </section>
+<br>
+        <!-- ফুটার -->
+        <footer class="bg-gray-900 text-white mt-12">
+            <div class="max-w-6xl mx-auto px-4 py-12">
+                <div class="md:flex justify-between gap-8">
+                    <div class="mb-8">
+                        <img src="image\WhatsApp Image 2025-02-16 at 22.45.42_41302f6a.jpg" alt="লোগো" class="h-12 mb-4">
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 flex-1">
+                        <div>
+                            <h3 class="font-bold mb-4">সেবাসমূহ</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class=" hover:text-red-500">সাবস্ক্রাইব</a></li>
+                                <li><a href="#" class="hover:text-red-500">নবায়ন</a></li>
+                                <li><a href="#" class="hover:text-red-500">অ্যাকাউন্ট পরিচালনা</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold mb-4">আমাদের সম্পর্কে</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="hover:text-red-500">আমাদের গল্প</a></li>
+                                <li><a href="#" class="hover:text-red-500">ক্যারিয়ার</a></li>
+                                <li><a href="#" class="hover:text-red-500">যোগাযোগ</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-bold mb-4">আইনগত</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="hover:text-red-500">গোপনীয়তা নীতি</a></li>
+                                <li><a href="#" class="hover:text-red-500">ব্যবহারের শর্তাবলী</a></li>
+                                <li><a href="#" class="hover:text-red-500">কুকি নীতি</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="md:w-64">
+                        <h3 class="font-bold mb-4">নিউজলেটার</h3>
+                        <div class="flex flex-col space-y-2">
+                            <input type="email" placeholder="আপনার ইমেইল লিখুন" class="px-4 py-2 rounded text-black">
+                            <button class="bg-red-600 px-4 py-2 rounded hover:bg-red-700">সাইন আপ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2023 দ্য ইকোনমিস্ট। সকল অধিকার সংরক্ষিত।</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+
