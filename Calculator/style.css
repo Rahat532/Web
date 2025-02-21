@@ -1,0 +1,101 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Calculator Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Calculator Container */
+.calculator {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 280px;
+    
+    /* Apply animation */
+    animation: slideIn 1s ease-out;
+}
+
+/* Display Screen */
+.display {
+    width: 90%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styling */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Number Buttons */
+.number {
+    background: white;
+    color: black;
+}
+
+/* Operator Buttons with Different Colors */
+.operator:nth-child(4) { background: #1e90ff; color: white; } /* Division */
+.operator:nth-child(8) { background: #ff6347; color: white; } /* Multiplication */
+.operator:nth-child(12) { background: #ffb703; color: white; } /* Subtraction */
+.operator:nth-child(16) { background: #28a745; color: white; } /* Addition */
+
+.equal {
+    background: #5352ed;
+    color: white;
+}
+
+.clear {
+    background: #ff4757;
+    color: white;
+}
+
+/* Hover and Click Effects */
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    transform: scale(0.95);
+}
