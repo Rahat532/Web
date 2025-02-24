@@ -1,0 +1,136 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #645982, #b5b6e4);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: linear-gradient(135deg, #fcfcfc, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(92, 145, 181, 0.5), 0 0 40px rgba(92, 145, 181, 0.3), 0 0 60px rgba(92, 145, 181, 0.2);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(92, 145, 181, 0.7), 0 0 50px rgba(92, 145, 181, 0.5), 0 0 70px rgba(92, 145, 181, 0.3);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form Styles */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* Style for the input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Success - Green Border */
+.form-group.success input {
+    border-color: green;
+}
+
+/* Error - Red Border */
+.form-group.error input {
+    border-color: red;
+}
+
+/* Error message style */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #5b91b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
